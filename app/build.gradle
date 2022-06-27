@@ -50,4 +50,6 @@ dependencies {
 
     // Amplify core dependency
     implementation 'com.amplifyframework:core:1.4.0'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.4.0'    //向项目添加 Amplify 身份验证库
+
 }

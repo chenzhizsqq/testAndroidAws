@@ -26,6 +26,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--当接收到 gettingstarted URI 方案时，将调用该活动。begin-->
+        <activity
+            android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="gettingstarted" />
+            </intent-filter>
+        </activity>
+        <!--当接收到 gettingstarted URI 方案时，将调用该活动。end-->
     </application>
 
 </manifest>
